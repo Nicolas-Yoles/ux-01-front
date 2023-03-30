@@ -1,0 +1,15 @@
+.fondo{
+    background-color: gray;
+    height: 25rem;
+}
+
+.container{
+    background-color: black;
+    height: max-content;
+}
+
+p{
+    color: white;
+    text-align: center;
+    font-size: large;
+}
