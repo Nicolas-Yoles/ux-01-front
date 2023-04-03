@@ -1,0 +1,20 @@
+<div class="titulo">
+  <h2>Registrar card</h2>
+</div>
+<div class="subtitulo">
+  <h4>Complete el formulario para continuar</h4>
+</div>
+<form (submit)="saveChanges()" [formGroup]="form" >
+  <mat-form-field appearance="outline" class="formulario">
+    <mat-label>Text</mat-label>
+    <input formControlName="title" matInput />
+  </mat-form-field>
+  <div class="botones">
+    <button mat-flat-button color="primary" [disabled]="form.invalid">
+      Guardar Cambios
+    </button>
+
+    <a mat-stroked-button>Cancelar</a>
+    <!-- <a mat-stroked-button routerLink="/card-list">Cancelar</a> -->
+  </div>
+</form>
