@@ -13,6 +13,9 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { CreateCardComponent } from './modules/card/create-card/create-card.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -32,6 +35,9 @@ import { CreateCardComponent } from './modules/card/create-card/create-card.comp
     FormsModule,
     MatFormFieldModule,
     MatInputModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatMenuModule,
   ],
   providers: [],
   bootstrap: [LandingPageComponent],

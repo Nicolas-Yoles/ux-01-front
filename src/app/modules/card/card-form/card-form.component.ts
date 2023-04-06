@@ -32,6 +32,6 @@ export class CardFormComponent implements OnInit {
 
   saveChanges() {
     this.onSubmit.emit(this.form.value);
-    alert(this.form.value.title);
+    // alert(this.form.value.title);
   }
 }

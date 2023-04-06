@@ -1,6 +1,63 @@
 <div class="container">
-  <app-card-form> </app-card-form>
-  <app-card-list></app-card-list>
-  <!-- <app-card-form> </app-card-form> -->
-  <!-- <app-card-form> </app-card-form> -->
+
+<mat-toolbar class="head">
+    <div class="head-menu">
+      <button mat-button [matMenuTriggerFor]="menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>Board</button>
+        <button mat-menu-item>News</button>
+        <button mat-menu-item>Search</button>
+      </mat-menu>
+    </div>
+
+    <div class="head-tit">
+      <h2>The Card App</h2>
+    </div>
+
+    <div class="head-act">
+      <!-- Boton Like... -->
+      <button
+        mat-icon-button
+        class="example-icon favorite-icon"
+        aria-label="Example icon-button with heart icon"
+      >
+        <mat-icon style="color:brown">favorite</mat-icon>
+      </button>
+
+      <!-- Boton Share... -->
+      <button
+        mat-icon-button
+        class="example-icon"
+        aria-label="Example icon-button with share icon"
+      >
+        <mat-icon style="color:rgb(56, 49, 100)">share</mat-icon>
+      </button>
+    </div>
+</mat-toolbar>
+
+<!-- ORIGINAL ... -->
+<!-- <div class="barra">
+<mat-toolbar>
+  <span>
+    The Card App
+  </span>
+</mat-toolbar>
+</div> -->
+<!-- <div class="container"> -->
+<!-- <app-create-card></app-create-card> -->
+<!-- <app-card-form> </app-card-form>
+<app-card-list></app-card-list> -->
+<!-- <app-card-form> </app-card-form> -->
+<!-- <app-card-form> </app-card-form> -->
+<!-- </div> -->
+
+
+<mat-toolbar class="foot">
+  <div class="foot-tit">
+    About Us
+  </div>
+</mat-toolbar>
+
 </div>
